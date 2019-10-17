@@ -1,0 +1,440 @@
+.rounded-circle {
+    width: 150px;
+    transition: 1s;
+}
+
+section.cardapiosite {
+    display: none;
+
+}
+
+@keyframes rightcardapio{
+    0%{
+        transform: translateX(1100px);
+        }
+    30%{
+        transform: rotate(xx) translateX(800px);
+        }
+    72%{
+        transform: rotate(xx) translateX(400px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0px);
+        }
+}
+
+section.homesite {
+    animation: lefthome 1s forwards 0s linear;
+}
+
+@keyframes lefthome{
+    0%{
+        transform: translateX(-1100px);
+        }
+    10%{
+        transform: rotate(xx) translateX(-500px);
+    }
+    20%{
+        transform: rotate(xx) translateX(-400px);
+        }   
+    30%{
+        transform: rotate(xx) translateX(-300px);
+        }                  
+    40%{
+        transform: rotate(xx) translateX(-200px);
+        }              
+    50%{
+        transform: rotate(xx) translateX(-100px);
+        }
+    70%{
+        transform: rotate(xx) translateX(-50px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0px);
+        }
+}
+
+
+section.sobresite {
+    display: none;
+    animation: rightsobre 1s forwards 0s linear;
+}
+
+@keyframes rightsobre{
+    0%{
+        transform: translateX(1100px);
+        }
+    30%{
+        transform: rotate(xx) translateX(800px);
+        }
+    72%{
+        transform: rotate(xx) translateX(400px);
+        }
+    100%{
+        transform: rotate(xx) translateX(0px);
+        }
+}
+
+@media (min-width: 575.98px) { 
+    @keyframes logoimg{
+        0%{
+            transform: rotate(0) scale(0.5) translateX(-230px);
+            opacity: 0;
+            }
+        20%{
+            transform: rotate(0) scale(0.6) translateX(-150px);
+            opacity: 0.2;
+            }    
+        40%{
+            transform: rotate(0) scale(0.7) translateX(-100px);
+            opacity: 0.4;
+            }
+        60%{
+            transform: rotate(0) scale(0.8) translateX(-80px);
+            opacity: 0.6;
+        }     
+        70%{
+            transform: rotate(0) scale(0.9) translateX(-65px);
+            opacity: 0.7;
+        }                     
+        80%{
+            transform: rotate(0) scale(1) translateX(-50px);
+            opacity: 0.8;
+            }
+        100%{
+            transform: rotate(0) scale(1) translateX(0px);
+            opacity: 1;
+            }
+    }
+    .rounded-circle{
+        animation: logoimg 3s forwards 0s linear;
+    }
+
+    img#loginimg {
+        margin-bottom: 4px;
+        padding-left: 5px;
+        width: 25px;
+    }
+
+    img#cardapioimg {
+        width: 41px;
+        margin-left: 14px;
+    }
+
+    img#lupaimg {
+        margin: 3px;
+        width: 25px;
+        height: 10%;
+    }
+
+    img#carrinhoimg {
+        margin-bottom: 8px;
+        padding-left: 5px;
+        width: 25px; 
+    }
+
+    img#sobreimg {
+        margin-left: 1px;
+        width: 44px;
+    }
+
+    img#homeimg {
+        margin-left: -2px;
+        width: 50px;
+    }
+
+    .cardapioleft {
+        padding-left: 120px;
+    }
+
+    .sobreleft {
+        padding-left: 120px;
+    }
+
+    section.cardapiosite {
+    	margin-left: 1%;
+    }
+
+}
+@media (max-width: 585px) {
+    #navbarheader {
+        background-image: url(../imgs/header.png);
+    }
+
+    #footerconteudo {
+        background-image: url(../imgs/footer.png);
+    }
+}
+
+@media (max-width: 990px) {
+    img#loginimg {
+        margin-bottom: 2px;
+        padding-left: 5px;
+        width: 25px;
+    }
+
+    img#cardapioimg {
+        margin-bottom: 2px;
+        width: 40px;
+        margin-left: 15px;
+    }
+
+    img#carrinhoimg {
+        margin-bottom: 6px;
+        padding-left: 5px;
+        width: 25px; 
+    }
+
+    img#lupaimg {
+        padding-left: 2px;
+        width: 30px;
+        height: 10%;
+    }
+
+    img#sobreimg {
+        margin-left: 5px;
+    }
+
+    span#sobretexto {
+        margin-left: 5px;
+    }
+
+    img#homeimg {
+        margin-left: 3px;
+        width: 50px;
+    }
+
+    span#hometexto {
+        margin-left: 6px;
+    }
+
+    .cardapiomobile {
+        width: 75px;
+    }
+
+    .sobremobile {
+        width: 55px;
+    }
+
+    input[type=search] {
+        width: 200px;
+    }
+
+    ul.navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cardapioleft {
+        padding-left: 20px;
+    }
+
+    .sobreleft {
+        padding-left: 20px;
+    }
+
+    img.rounded-circle {
+        width: 100px;
+    }
+
+    div.row {
+        margin-left: 70px;
+    }
+
+    div.col-sm-12 {
+        padding-bottom: 10px;
+    }
+
+    section.cardapiosite {
+        margin-left: -40px;
+    }
+
+    section.homesite {
+        margin-left: -40px;
+    }
+
+    section.sobresite {
+        margin-left: -40px;
+    }
+
+   div#rodape {
+        margin-left: 25%;
+   }
+}
+/* Header */
+/* Estilizações */
+.text-madeira {
+    color: #3B240B;
+}
+
+header {    
+    background-image: url(../imgs/header.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a#crudadmin {
+    color: white;
+    margin-bottom: 2px;
+}
+
+a#crudadmin:hover {
+    margin-left: 40px;
+    background-color: transparent;
+    color: #3B240B;
+    border-bottom: 2px solid  rgb(51, 33, 11);
+    border-radius: 8px;
+    width: 180px;
+    transition: 1s;
+}
+
+nav#menu {
+    letter-spacing: 1px;
+}
+
+nav#menu li a#hover{
+    color: #3B240B;
+    text-decoration: none;
+    border-bottom: 2px solid black; 
+}
+
+nav#menu li a {
+    color: white;
+}
+
+nav#menu ul li a:hover {
+    border-radius: 20px;
+    background-color:#D6D6D6;
+    color: #3B240B;
+    border-bottom:3px solid #61380B;
+    transition: 1s;
+}
+
+button[type=submit] {
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type=search]:hover {
+    transition: 1s;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    border: rgb(51, 33, 11) solid 1px;
+    border-radius: 8px;
+}
+
+#buttonestilo {
+    color: rgb(51, 33, 11);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(51, 33, 11);
+}
+
+#buttonestilo:hover {
+    transition: 1s;
+    color: rgb(51, 33, 11);
+    background-color: rgb(51, 33, 11);
+    background-image: none;
+    border-color: rgb(51, 33, 11);
+}
+
+/* Carrinho */
+nav#usuarioprincipal {
+    letter-spacing: 1px;
+}
+
+nav#usuarioprincipal a{
+    padding: 5px;
+    color: white;
+}
+
+nav#usuarioprincipal a.carrinho:hover {
+    margin-left: 50px;
+    background-color: transparent;
+    color: #3B240B;
+    border-bottom: 2px solid  rgb(51, 33, 11);
+    border-radius: 10px;
+    transition: 1s;
+    width: 125px;
+}
+
+nav#usuarioprincipal a.login:hover {
+    margin-left: 50px;
+    color: #3B240B;
+    background-color: transparent;
+    border-bottom: 2px solid  rgb(51, 33, 11);
+    border-radius: 10px;
+    transition: 1s;
+    width: 100px;
+}
+
+nav#usuarioprincipal a.login {
+    margin-top: 20px;
+}
+
+
+/* Footer */
+/* Estilizações */
+footer {
+    background-image: url(../imgs/footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+div#contato,div#informacoes {
+    color: white;
+    position: relative;
+    width: 50%;
+    font-size: 12px;
+}
+
+div#informacoes a {
+    text-decoration: none;
+    color: white;
+}
+
+span.titulorodape {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+#relative {
+    position: relative;
+    top: 75px;
+}
+
+#comorealizarpedido {
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#comorealizarpedido:hover {
+    color: gray;
+    background-color: white;
+}
+
+#titulosfooter {
+    background-image: linear-gradient(to right,#2A1B0A,#3B240B,rgb(51, 33, 11),#2A1B0A );
+    border-radius: 9px;
+}
+
+/* Section Sobre */
+/* Estilizações */
+#informacoessobre {
+    background-image: linear-gradient(#2A1B0A,#3B240B,rgb(51, 33, 11),#2A1B0A);
+}
+
+#dadossobre {
+    background-image: linear-gradient(#2A1B0A,#3B240B,rgb(51, 33, 11),#2A1B0A);
+}
